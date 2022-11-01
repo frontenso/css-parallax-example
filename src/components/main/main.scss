@@ -1,0 +1,108 @@
+.main {
+  position: relative;
+  height: 100vh;
+  perspective: 300px;
+  z-index: 1;
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  &__layer {
+    position: relative;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+
+    &--1 {
+      background-color: darkcyan;
+    }
+
+    &--2 {
+      background-color: darkblue;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+
+    &--1 {
+      transform: translateZ(10px);
+    }
+
+    &--2 {
+      transform: translateZ(150px);
+    }
+
+    &--3 {
+      transform: translateZ(175px);
+    }
+
+    &--4 {
+      transform: translateZ(20px);
+    }
+
+    &--5 {
+      transform: translateZ(100px);
+    }
+
+    &--6 {
+      transform: translateZ(150px);
+    }
+
+    &--7 {
+      transform: translateZ(175px);
+    }
+
+    &--8 {
+      transform: translateZ(200px);
+    }
+  }
+
+  &__el {
+    position: absolute;
+    max-width: 30vw;
+
+    &--1 {
+      top: 20vh;
+      left: 20vw;
+    }
+
+    &--2 {
+      top: 60vh;
+      left: 60vw;
+    }
+
+    &--3 {
+      top: 40vh;
+      left: 35vw;
+    }
+
+    &--4 {
+      top: 80vh;
+      left: 30vw;
+    }
+
+    &--5 {
+      top: 25vh;
+      left: 20vw;
+    }
+
+    &--6 {
+      top: 60vh;
+      left: 60vw;
+    }
+
+    &--7 {
+      top: 40vh;
+      left: 35vw;
+    }
+
+    &--8 {
+      top: 50vh;
+      left: 25vw;
+    }
+  }
+}

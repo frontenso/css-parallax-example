@@ -8,99 +8,53 @@
 
 {% block content %}
   <div class="page-home page">
-    <div class="container">
-      {% image './src/images/frontenso-11ty-starter.png',
-        {
-          alt: 'frōntensō-11ty-starter',
-          title: 'frōntensō-11ty-starter',
-          pictureClass: 'my-picture-custom-class',
-          class: 'example-image block max-w-full h-auto mb-14'
-        },
-        280
-      %}
-
-      {{
-        button({
-          className: 'page-home__button',
-          children: 'Buy something',
-          chevronRight: true
-        })
-      }}
-      {% include './components/some-component/some-component.njk' %}
-      <section class="mt-14">
-        <h3 class="text-lg font-semibold mb-5">
-          Image example (AVIF and WebP are generated)
-        </h3>
-        {# not passing maxWidth here #}
-        <div class="max-w-xs">
-          {% image './src/images/cat.jpg',
-            {
-              alt: 'Cat',
-              class: 'example-image block max-w-full h-auto'
-            }
-          %}
+    <div class="container main">
+      <div class="main__layer main__layer--1">
+        <div class="main__text main__text--1">
+          <span class="main__el main__el--1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus cumque est ipsam nemo accusamus doloribus ea quas saepe ipsum deleniti. At sapiente tenetur aliquam inventore quae est natus quisquam modi?
+            Magni inventore impedit vero temporibus
+          </span>
         </div>
-      </section>
-      <section class="mt-14">
-        <h3 class="text-lg font-semibold mb-5">
-          Image example 2, maxWidth=500 is passed (AVIF and WebP are generated)
-        </h3>
-        {# passing maxWidth=500 here #}
-        <div class="max-w-xs bg-red-100">
-          {% image './src/images/wolf.png',
-            {
-              alt: 'Wolf',
-              class: 'example-image block max-w-full h-auto'
-            },
-            500
-          %}
+        <div class="main__text main__text--2">
+          <span class="main__el main__el--2">
+            DFGRTHJ56Y56YHRTHBTHRT
+          </span>
         </div>
-      </section>
-      <section class="mt-14">
-        <h3 class="text-lg font-semibold mb-1">
-          An image inlined in the CSS example (compress such images manually!)
-        </h3>
-        <h4 class="max-w-xl text-lg text-red-600 mb-6 font-bold tracking-wide">
-          <span class="uppercase">Attention!</span> Please use this feature with caution as it may bloat the
-          final CSS file. Inlining images could be a good approach if the file is quite small, in other cases prefer `&#123;% image %&#125;` tag.
-        </h4>
-        <div class="page-home__inline-image-example"></div>
-      </section>
-      <section class="mt-14">
-        <h3 class="text-lg font-semibold mb-5">
-          Vector image example (using SVG sprite)
-        </h3>
-        <svg class="text-black fill-current w-20 h-20">
-          <use xlink:href="#icon-logo-example"></use>
-        </svg>
-      </section>
-      <div class="flex items-center">
-        <div></div>
-        <div></div>
+        <div class="main__text main__text--3">
+          <span class="main__el main__el--3">
+            HRTHRHTR65B64V56GFC4565B45VB 45645G64GV 4VT45V45TV45VT
+          </span>
+        </div>
+        <div class="main__text main__text--4">
+          <span class="main__el main__el--4">
+            47 8NRV485VTBY84 NT845NV84Y BN84YV84 YN489YNV 89 4YN 84YM5 8954YN 84YN 8TY45N 8TY498TY N8549YTN 894YN 58Y N89Y5 TN Y4 NT
+          </span>
+        </div>
       </div>
-      <section class="mt-14">
-        <h3 class="text-lg font-semibold mb-5">
-          Tailwind CSS Example
-        </h3>
-        <div class="px-4 py-4 rounded w-64 shadow shadow-md">
-          <h3 class="bold mb-2 text-blue-600 hover-default font-bold">
-            Some section
-          </h3>
-          <div class="flex">
-            <svg class="relative top-0.75 mr-2 w-5 h-5">
-              <use xlink:href="#icon-movies"></use>
-            </svg>
-            <div class="text-sm">
-              <div class="line -mb-0.75">
-                Movies
-              </div>
-              <div class="text-gray-400">
-                For cosy evenings
-              </div>
-            </div>
-          </div>
+      <div class="main__layer main__layer--2">
+        <div class="main__text main__text--5">
+          <span class="main__el main__el--5">
+            OIRENUTVC84U 8 I4C95TIJ495T945 945NV8N4V589CNTU489 NYT485 NY84TY N8945CYVN8945Y N894Y5NTCV984YN T8Y4
+            INFCVUER8 84YFNCV48YCVB894NCY84Y94YCV57BTY N4547CNV897 N8947 89T7N8 C 789N745 897T8495 TN84Y5 G4Y5G Y485GY4
+          </span>
         </div>
-      </section>
+        <div class="main__text main__text--6">
+          <span class="main__el main__el--6">
+            M3C 9RI39MI394 RUM34UCR VN39UMC
+          </span>
+        </div>
+        <div class="main__text main__text--7">
+          <span class="main__el main__el--7">
+            3OMCIR90 3MI9 3UN 8U3N89C 893 NV8RY3CN89CY R3984CY N893N CRSDF
+          </span>
+        </div>
+        <div class="main__text main__text--8">
+          <span class="main__el main__el--8">
+            3EM3N9CU9RU3C 8RU43 8YRB83 Y83NY CV893N YR89 3Y4NR CV3498N R
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
